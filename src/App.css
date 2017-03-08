@@ -29,6 +29,22 @@
 
 .social-link {
   margin-bottom: .5rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   color: black;
+}
+
+@media (max-width: 600px) {
+  .App-sidebar-content {
+    top: 1rem;
+    margin: 0 auto;
+    left: inherit;
+    right: inherit;
+    bottom: inherit;
+  }
+
+  .App-content-social {
+    left: 2rem;
+    text-align: center;
+  }
 }
