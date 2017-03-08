@@ -10,7 +10,7 @@ class App extends Component {
           <div className="App-sidebar-content">
             <h1>jimjkelly</h1>
             <p>
-              Software Development for the Web and Operations.
+              Software Development for Operations and the Web.
             </p>
           </div>
         </div>
