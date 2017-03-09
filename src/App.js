@@ -8,7 +8,7 @@ class App extends Component {
       <div className="App">
         <div className="App-sidebar">
           <div className="App-sidebar-content">
-            <h1>jimjkelly</h1>
+            <h1>jim<span className="middle-initial">j</span>kelly</h1>
             <p>
               Software Development for Operations and the Web.
             </p>
