@@ -1,5 +1,9 @@
 image: node:10
 
+stages:
+  - build
+  - deploy
+
 build:
   script:
   - yarn install
