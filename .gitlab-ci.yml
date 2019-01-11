@@ -1,9 +1,11 @@
 image: node:10
 
-ci:
+build:
   script:
   - yarn install
   - npm install gatsby-cli
+  - yarn lint
+  - yarn test
   - node_modules/.bin/gatsby build --prefix-paths
   artifacts:
     paths:
@@ -11,5 +13,11 @@ ci:
   cache:
     paths:
       - node_modules
+deploy:
+  image: python:3.6
+  before_script:
+    - pip install awscli
+  script:
+    - aws s3 sync public s3://jimjkelly.info --delete --region us-west-2 --acl public-read
   only:
   - master
