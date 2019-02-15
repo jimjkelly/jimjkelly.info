@@ -15,7 +15,7 @@ locally on the server but somewhere else. Today we'll take a look
 at how Vuse leveraged Amazon S3 to allow for direct uploads to S3
 from the users's browser without compromising security.
 
-### Background
+## Background
 
 The architecture for our customer control center, which allows users
 to upload video to our service, revolves around a simple static
@@ -55,7 +55,7 @@ up post discussing how to resolve these issues.
 Below we'll show you how to set things up on both the server and
 the client.
 
-### Generating the Policy on Your Server
+## Generating the Policy on Your Server
 
 Like with many things with AWS, the power of the API is only matched
 by how complicated it can be. Getting this to work correctly was
@@ -249,7 +249,7 @@ return jsonify({
 This will get returned to the client as JSON. Next we'll see
 how the client can use this to upload directly to S3.
 
-### Client-side Uploading to S3
+## Client-side Uploading to S3
 
 On the client, you'll want to make a call to your API, and
 create a function to handle the returned data. We'll take a
@@ -336,7 +336,7 @@ as you see fit, as you normally would on any AJAX call.
 Now you should have a setup that allows you to securely
 upload files to S3 from client-side JavaScript.
 
-### Concluding Thoughts
+## Concluding Thoughts
 
 This technique is one that works especially well in a workflow
 where you need to push large data to a server other than the
